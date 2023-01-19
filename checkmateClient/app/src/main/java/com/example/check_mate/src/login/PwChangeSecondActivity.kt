@@ -28,7 +28,7 @@ class PwChangeSecondActivity : BaseActivity<ActivityPwChangeSecondBinding>(Activ
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 if (p0.toString().isEmpty()){
                     binding.layoutNewPw.error = "공백은 허용하지않습니다."
-                } else if (!Pattern.matches("^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}\$", p0.toString())) {
+                } else if (!Pattern.matches("^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,20}\$", p0.toString())) {
                     binding.layoutNewPw.error = getString(R.string.pw_condition)
                 } else {
                     binding.layoutNewPw.error = null
