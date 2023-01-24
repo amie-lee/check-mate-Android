@@ -16,7 +16,6 @@ import com.example.check_mate.R
 import com.example.check_mate.config.ApplicationClass.Companion.sSharedPreferences
 import com.example.check_mate.databinding.ActivityLoginBinding
 import com.example.check_mate.src.main.MainActivity
-import com.kakao.sdk.auth.LoginClient
 import com.kakao.sdk.auth.model.OAuthToken
 import com.kakao.sdk.common.KakaoSdk
 import com.kakao.sdk.common.model.AuthErrorCause
@@ -38,12 +37,6 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(loginBinding.root)
         val TAG = "login"
-
-        val kakaoKey = getString(R.string.kakao_native_app_key)
-        val naverClientID = getString(R.string.naver_client_id)
-        val naverClientSecret = getString(R.string.naver_client_secret)
-
-        KakaoSdk.init(this, kakaoKey)
 
         fun moveMainPage() {
             val intent = Intent(this, MainActivity::class.java)
@@ -126,7 +119,6 @@ class LoginActivity : AppCompatActivity() {
                     ).show()
                 }
             }
-            NaverIdLoginSDK.initialize(this, naverClientID, naverClientSecret, "Checkmate")
             NaverIdLoginSDK.authenticate(this, oAuthLoginCallback)
         }
 
@@ -184,10 +176,10 @@ class LoginActivity : AppCompatActivity() {
         }
 
         loginBinding.kakaoLogin.setOnClickListener {
-            if(LoginClient.instance.isKakaoTalkLoginAvailable(this)) {
-                LoginClient.instance.loginWithKakaoTalk(this, callback = callback)
+            if(UserApiClient.instance.isKakaoTalkLoginAvailable(this)) {
+                UserApiClient.instance.loginWithKakaoTalk(this, callback = callback)
             } else {
-                LoginClient.instance.loginWithKakaoAccount(this, callback = callback)
+                UserApiClient.instance.loginWithKakaoAccount(this, callback = callback)
             }
         }
 
