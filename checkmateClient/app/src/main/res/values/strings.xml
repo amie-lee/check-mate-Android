@@ -6,4 +6,13 @@
     <string name="pw_confirm">* 비밀번호가 일치하지 않습니다.</string>
     <string name="email_empty">* 이메일을 입력해주세요.</string>
     <string name="email_error">* 유효하지 않은 이메일 주소입니다.</string>
+    <string name="프로필_생성">프로필 생성</string>
+    <string name="ID">ID</string>
+    <string name="닉네임">닉네임</string>
+    <string name="완료">완료</string>
+    <string name="회원가입">회원가입</string>
+    <string name="이메일입력">이메일 주소</string>
+    <string name="비밀번호입력">비밀번호</string>
+    <string name="비밀번호재확인">비밀번호 확인</string>
+    <string name="다음버튼">다음</string>
 </resources>
