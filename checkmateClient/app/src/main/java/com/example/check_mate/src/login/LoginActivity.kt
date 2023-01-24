@@ -1,6 +1,5 @@
 package com.example.check_mate.src.login
 
-
 import android.app.Instrumentation.ActivityResult
 import android.content.ContentValues.TAG
 import android.content.Context
