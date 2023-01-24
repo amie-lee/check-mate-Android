@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import com.example.check_mate.R
-import com.example.check_mate.src.login.LoginActivity
+import com.example.check_mate.src.signup.SignUpActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +17,7 @@ class SplashActivity : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
 
             // 일정 시간이 지나면 LoginActivity로 이동
-            val intent= Intent( this, LoginActivity::class.java)
+            val intent= Intent( this, SignUpActivity::class.java)
             startActivity(intent)
 
             // 이전 키를 눌렀을 때 스플래스 스크린 화면으로 이동을 방지하기 위해
