@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">check-mate!</string>
+    <string name="pw_title">비밀번호 변경</string>
+    <string name="pw_condition">* 알파벳, 숫자를 포함한 8글자 이상의 비밀번호를 입력해주세요.</string>
+    <string name="pw_confirm">* 비밀번호가 일치하지 않습니다.</string>
+    <string name="email_empty">* 이메일을 입력해주세요.</string>
+    <string name="email_error">* 유효하지 않은 이메일 주소입니다.</string>
 </resources>
