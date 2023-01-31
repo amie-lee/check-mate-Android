@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="15dp"
+    android:paddingHorizontal="21dp"
+    android:background="@drawable/ch_border_box"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="체크보드, 어떻게 써야할까요?"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:autoSizeTextType="uniform"
+            android:maxLines="1"
+            android:textSize="13sp"
+            android:autoSizeMinTextSize="10dp"
+            android:layout_marginBottom="18dp"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/check_board"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            android:background="@drawable/ch_border_box">
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="125dp">
+
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:background="@drawable/ch_round_lt"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="긴급하진 않지만\n중요한 일"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="9sp"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:text="장기적으로 좋은 영향을\n주는 자기계발, 취미생활" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:background="@drawable/ch_round_rt"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="중요하고\n긴급한 일"
+                    android:textSize="14sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="빠른 시일 내로 끝내야만\n하는 업무, 과제 등"
+                    android:textSize="9sp"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="125dp">
+
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:background="@drawable/ch_round_lb"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="중요하지도\n긴급하지도 않은 일"
+                    android:textSize="14sp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="스트레스를 해소 할 수 있는\n자기보상적인 일, 소확행"
+                    android:textSize="9sp"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:background="@drawable/ch_round_rb"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="중요하진 않지만\n긴급한 일"
+                    android:textSize="14sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="빨리 할 수록 좋은 집안일,\n여유 있는 과제 등"
+                    android:textSize="9sp"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ch_border_btn_close"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingHorizontal="9dp"
+        android:paddingVertical="4dp"
+        android:text="닫기"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -15,4 +15,13 @@
     <string name="비밀번호입력">비밀번호</string>
     <string name="비밀번호재확인">비밀번호 확인</string>
     <string name="다음버튼">다음</string>
+    <string name="important">중요</string>
+    <string name="urgent">긴급</string>
+    <string name="checkboard">check board</string>
+
+    <string-array name="spinner_day">
+        <item>오늘</item>
+        <item>이번주</item>
+        <item>이번달</item>
+    </string-array>
 </resources>
