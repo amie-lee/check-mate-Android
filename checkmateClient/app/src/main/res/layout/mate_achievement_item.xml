@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#2C2C2C">
+
+    <LinearLayout
+        android:id="@+id/recycle_group_mate_achievement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/recycle_tv_mate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosans"
+            android:text="메이트"
+            android:textColor="@color/white_opaque"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recycle_tv_achievement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/notosans"
+            android:text="님의 achievement"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/recycle_tv_mate"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycle_group_mate_achievement">
+
+        <ProgressBar
+            android:id="@+id/mate_circleprogressbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressBackgroundTint="#D3D3D3"
+            android:progressDrawable="@drawable/mate_circle_progressbar"
+            android:progressTint="#696969"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycle_tv_achievement" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="12dp"
+            android:text="70%"
+            android:textColor="@color/white"
+            android:textSize="26dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintStart_toEndOf="@+id/mate_circleprogressbar"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/recycle_group_chess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/recycle_group_mate_achievement"
+        android:gravity="center"
+        android:layout_marginEnd="5dp">
+
+        <LinearLayout
+            android:id="@+id/recycle_minigroup1_chess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:layout_width="22dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_chess_pawn"
+                android:layout_gravity="bottom"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_chess_rook"
+                android:layout_marginStart="30dp"
+                android:layout_gravity="bottom"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_chess_knight"
+                android:layout_marginStart="30dp"
+                android:layout_gravity="bottom"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/recycle_minigroup2_chess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:layout_width="22dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_chess_bishop"
+                android:layout_gravity="bottom"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_chess_queen"
+                android:layout_marginStart="30dp"
+                android:layout_gravity="bottom"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_chess_king"
+                android:layout_marginStart="30dp"
+                android:layout_gravity="bottom"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

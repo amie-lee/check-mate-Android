@@ -11,10 +11,23 @@
         <entry key="..\:/PROJECT/checkmate_android/checkmateClient/app/src/main/res/layout/activity_sign_up.xml" value="0.2033514492753623" />
         <entry key="..\:/PROJECT/checkmate_android/checkmateClient/app/src/main/res/layout/activity_splash.xml" value="0.2033514492753623" />
         <entry key="..\:/PROJECT/checkmate_android/checkmateClient/app/src/main/res/layout/fragment_checkboard.xml" value="0.2033514492753623" />
+        <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/drawable/borderbutton_email.xml" value="0.202" />
+        <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/drawable/circle_progressbar.xml" value="0.21" />
+        <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/drawable/mate_btn_back_roundbtn.xml" value="0.1" />
+        <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/drawable/mate_circle_progressbar.xml" value="0.1905" />
+        <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/drawable/mate_horizontal_progressbar.xml" value="0.192" />
+        <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/layout/activity_find_mate.xml" value="0.18993055555555555" />
         <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/layout/activity_login.xml" value="0.21875" />
+        <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/layout/activity_notice.xml" value="0.1892361111111111" />
         <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/layout/activity_regist.xml" value="0.21875" />
         <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/layout/activity_sign_up.xml" value="0.21875" />
-        <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/layout/fragment_mate.xml" value="0.21875" />
+        <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/layout/fragment_mate.xml" value="0.18857142857142858" />
+        <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/layout/mate_achievement_item.xml" value="0.18993055555555555" />
+        <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/layout/mate_ahchievement_item.xml" value="0.2857142857142857" />
+        <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/layout/mate_custom_dialog.xml" value="0.2857142857142857" />
+        <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/layout/mate_customdialog_chess_bishop.xml" value="0.18993055555555555" />
+        <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/layout/mate_customdialog_chess_pawn.xml" value="0.18993055555555555" />
+        <entry key="..\:/PROJECT/checkmate_start/checkmateClient/app/src/main/res/layout/notice_item.xml" value="0.1872852233676976" />
       </map>
     </option>
   </component>

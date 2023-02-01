@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2C2C">
+
+    <TextView
+        android:id="@+id/tv_find_mate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="메이트 찾기"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/notosans"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/findmate_imgbtn_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_find_mate"
+        app:srcCompat="@drawable/mate_icon_back" />
+
+    <LinearLayout
+        android:id="@+id/group_mate_search_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findmate_imgbtn_back">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_findmate"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            app:cardBackgroundColor="#BDBDBF"
+            app:cardCornerRadius="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_find_mate">
+
+
+            <EditText
+                android:id="@+id/et_find_mate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center"
+                android:layout_marginStart="20dp"
+                android:background="@android:color/transparent"
+                android:hint="메이트의 id를 입력해주세요."
+                android:includeFontPadding="false"
+                android:inputType="textNoSuggestions"
+                android:textColor="#8A8A8E"
+                android:textSize="13dp" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_mate_seach"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:text="검색"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="@drawable/mate_btn_back_roundbtn"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+
+        </Button>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
