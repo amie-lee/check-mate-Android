@@ -59,6 +59,12 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".src.main.mate.NoticeActivity">
+        </activity>
+        <activity
+            android:name=".src.main.mate.FindMateActivity">
+        </activity>
+        <activity
             android:name=".src.main.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -73,7 +79,7 @@
         </activity>
         <activity
             android:name=".src.splash.SplashActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.Design.Light.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"

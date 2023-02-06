@@ -16,22 +16,23 @@
         android:fontFamily="@font/notosans_semibold"
         android:text="메이트"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="20dp"
+        android:id="@+id/mate_btn_notice"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="25dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mate_icon_notice_bell" />
+        app:srcCompat="@drawable/ic_mate_notice" />
 
 
 
@@ -39,26 +40,35 @@
         android:id="@+id/tv_achievement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="achievement"
+        android:text="성취율"
         android:textColor="#FFFFFF"
-        android:textSize="15dp"
+        android:textSize="12dp"
         android:fontFamily="@font/notosans"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_mate_title"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"/>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/group_achievement_collects"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginEnd="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_achievement" >
+
+        <ImageView
+            android:id="@+id/mate_border_round"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/ch_border_round_transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <LinearLayout
@@ -68,6 +78,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -83,7 +95,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="@font/notosans"
                     android:text="닉네임"
-                    android:textColor="@color/white_opaque"
+                    android:textColor="#FFC9C9"
                     android:textSize="12dp" />
 
                 <TextView
@@ -102,7 +114,7 @@
             <LinearLayout
                 android:id="@+id/group_progressbar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:weightSum="5">
 
                 <ProgressBar
@@ -118,18 +130,55 @@
                     android:progress="70"
                     android:progressBackgroundTint="@android:color/darker_gray"
                     android:progressTint="@color/white"
+                    android:scaleY="4" />
 
-                    android:scaleY="5" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="70"
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        android:layout_weight="0.5"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        android:layout_weight="0.5"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="70"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="1dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="70%"
+                    android:text="%"
+                    android:textSize="12dp"
                     android:textColor="@color/white"
-                    android:layout_weight="1"
+                    android:layout_weight="0.5"
                     android:layout_gravity="center"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginBottom="1dp"/>
+                    android:layout_marginBottom="1dp"/>-->
 
 
             </LinearLayout>
@@ -143,7 +192,8 @@
             android:id="@+id/group_collects"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/group_achievement">
@@ -153,7 +203,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/notosans"
                 android:text="닉네임"
-                android:textColor="@color/white_opaque"
+                android:textColor="#FFC9C9"
                 android:textSize="12dp" />
 
             <TextView
@@ -171,20 +221,31 @@
         </LinearLayout>
 
 
+        <ImageView
+            android:id="@+id/mate_border_round_light"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/mate_border_round_light"
+            app:layout_constraintTop_toBottomOf="@+id/group_collects"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="35dp"
             android:gravity="left"
             app:layout_constraintTop_toBottomOf="@id/group_collects"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="15dp">
 
             <ImageButton
                 android:id="@+id/mate_img_pawn"
-                android:layout_width="20dp"
+                android:layout_width="22dp"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_chess_pawn"
                 android:layout_gravity="bottom"
@@ -194,10 +255,10 @@
 
             <ImageButton
                 android:id="@+id/mate_img_rook"
-                android:layout_width="25dp"
+                android:layout_width="26dp"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_chess_rook"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="27dp"
                 android:layout_gravity="bottom"
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
@@ -205,10 +266,10 @@
 
             <ImageButton
                 android:id="@+id/mate_img_knight"
-                android:layout_width="30dp"
+                android:layout_width="27dp"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_chess_knight"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="27dp"
                 android:layout_gravity="bottom"
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
@@ -216,10 +277,10 @@
 
             <ImageButton
                 android:id="@+id/mate_img_bishop"
-                android:layout_width="30dp"
+                android:layout_width="23dp"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_chess_bishop"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="27dp"
                 android:layout_gravity="bottom"
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
@@ -227,10 +288,10 @@
 
             <ImageButton
                 android:id="@+id/mate_img_queen"
-                android:layout_width="35dp"
+                android:layout_width="26dp"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_chess_queen"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="27dp"
                 android:layout_gravity="bottom"
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
@@ -238,10 +299,10 @@
 
             <ImageButton
                 android:id="@+id/mate_img_king"
-                android:layout_width="40dp"
+                android:layout_width="28dp"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_chess_king"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="27dp"
                 android:layout_gravity="bottom"
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
@@ -251,43 +312,53 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/tv_mate"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/mate_group_mate"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="mate"
-        android:textColor="#FFFFFF"
-        android:textSize="15dp"
-        android:fontFamily="@font/notosans"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/group_achievement_collects"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"/>
-
-    <ImageButton
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="25dp"
-        android:adjustViewBounds="true"
-        android:background="@android:color/transparent"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/tv_mate"
-        app:layout_constraintTop_toBottomOf="@+id/group_achievement_collects"
-        app:srcCompat="@drawable/mate_icon_plus" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group_achievement_collects">
+
+        <TextView
+            android:id="@+id/tv_mate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/notosans"
+            android:text="메이트"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/mate_btn_plus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_marginStart="300dp"
+            app:srcCompat="@drawable/ic_mate_plus" />
+
+    </LinearLayout>
+
+
 
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle_group_mate_achievement"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="430dp"
         tools:itemCount="2"
         tools:listitem="@layout/mate_achievement_item"
-        app:layout_constraintTop_toBottomOf="@id/tv_mate"
+        app:layout_constraintTop_toBottomOf="@id/mate_group_mate"
         android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="45dp"
-        android:layout_marginEnd="45dp"/>
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,34 +2,34 @@ package com.example.check_mate.src.main.mate
 
 import android.app.Dialog
 import android.content.Context
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import com.example.check_mate.databinding.MateCustomdialogChessPawnBinding
-import kotlinx.android.synthetic.main.mate_customdialog_chess_pawn.*
+import com.example.check_mate.databinding.ChessDialogBinding
 
 
-class MateDialog(
+class MateDialog (
     context: Context,
     private val okCallback: (String) -> Unit,
-) : Dialog(context) { // 뷰를 띄워야하므로 Dialog 클래스는 context를 인자로 받는다.
+) : Dialog(context) {
 
-    private lateinit var binding: MateCustomdialogChessPawnBinding
+    private lateinit var binding: ChessDialogBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // 만들어놓은 dialog_profile.xml 뷰를 띄운다.
-        binding = MateCustomdialogChessPawnBinding.inflate(layoutInflater)
+        binding = ChessDialogBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // 기본 흰색 배경 없애기 위해
+        window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         initViews()
     }
 
     private fun initViews() = with(binding) {
-        // 뒤로가기 버튼, 빈 화면 터치를 통해 dialog가 사라지지 않도록
         setCancelable(false)
-
-
-        // 닫기 Button 클릭에 대한 Callback 처리
-        mate_dialog_btn_close.setOnClickListener {
-            dismiss()
-        }
+            mateBtnClose.setOnClickListener {
+                dismiss()
+            }
     }
+
 }
