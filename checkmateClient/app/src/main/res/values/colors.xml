@@ -10,4 +10,5 @@
     <color name="white_opaque">#80FFFFFF</color>
     <color name="red">#FF5959</color>
     <color name="main_black">#2C2C2C</color>
+    <color name="category_normal">#549700</color>
 </resources>
