@@ -3,6 +3,7 @@ package com.example.check_mate.src.main.mate
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.check_mate.R
@@ -21,10 +22,12 @@ class MateAdapter(val itemList: ArrayList<MateData>): RecyclerView.Adapter<MateA
     override fun onBindViewHolder(holder: MateAdapter.ViewHolder, position: Int) {
         holder.recycle_tv_mate.text = itemList[position].mate_name
         holder.recycle_mate_percent.text = itemList[position].mate_ach
+        holder.mate_circleprogressbar.progress = itemList[position].mate_circleprogressbar
     }
     // (4) 레이아웃 내 View 연결
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val recycle_tv_mate: TextView = itemView.findViewById(R.id.recycle_tv_mate)
         val recycle_mate_percent: TextView = itemView.findViewById(R.id.recycle_mate_percent)
+        val mate_circleprogressbar: ProgressBar = itemView.findViewById(R.id.mate_circleprogressbar)
     }
 }

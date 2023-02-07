@@ -19,8 +19,8 @@
         android:id="@+id/recycle_group_mate_achievement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="7dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mate_border_round"
         app:layout_constraintTop_toTopOf="parent">
@@ -61,15 +61,15 @@
         <ProgressBar
             android:id="@+id/mate_circleprogressbar"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:progress="70"
             android:layout_gravity="center"
             android:indeterminate="false"
             android:max="100"
             android:progressBackgroundTint="#696969"
             android:progressDrawable="@drawable/mate_circle_progressbar"
-            android:progressTint="#D3D3D3"
+            android:progressTint="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/recycle_tv_achievement" />
 

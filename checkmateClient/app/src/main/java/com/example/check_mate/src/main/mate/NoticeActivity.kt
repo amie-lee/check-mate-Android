@@ -23,7 +23,6 @@ class NoticeActivity: BaseActivity<ActivityNoticeBinding>(ActivityNoticeBinding:
         noticeBinding.noticeImgbtnBack.setOnClickListener {
             finish()
         }
-        
 
         noticeBinding.recycleNotice.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         noticeBinding.recycleNotice.adapter = NoticeAdapter

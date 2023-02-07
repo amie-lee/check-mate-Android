@@ -42,12 +42,13 @@ class  MateFragment : BaseFragment<FragmentMateBinding>(FragmentMateBinding::bin
             showChessDialog()
         }
 
+
         mateBinding.recycleGroupMateAchievement.layoutManager = LinearLayoutManager(requireActivity(), LinearLayoutManager.VERTICAL, false)
         mateBinding.recycleGroupMateAchievement.adapter = MateAdapter
 
 
-        mateData.add(MateData("메이트11", "70"))
-        mateData.add(MateData("메이트22", "45"))
+        mateData.add(MateData("메이트11", "70",70))
+        mateData.add(MateData("메이트22", "45",45))
 
         return mateBinding.root
     }
