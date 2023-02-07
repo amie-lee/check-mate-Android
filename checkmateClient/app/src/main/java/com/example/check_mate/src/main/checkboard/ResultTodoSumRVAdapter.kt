@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.check_mate.databinding.ItemTodoBinding
 import com.example.check_mate.src.main.checkboard.models.ResultTodoSum
 
-class ResultTodoSumRVAdater(private val dataList: ArrayList<ResultTodoSum>): RecyclerView.Adapter<ResultTodoSumRVAdater.ResultTodoSumViewHolder>() {
+class ResultTodoSumRVAdapter(private val dataList: ArrayList<ResultTodoSum>): RecyclerView.Adapter<ResultTodoSumRVAdapter.ResultTodoSumViewHolder>() {
     inner class ResultTodoSumViewHolder(private val viewBinding: ItemTodoBinding): RecyclerView.ViewHolder(viewBinding.root){
 
         fun bind(data: ResultTodoSum){
@@ -38,5 +38,4 @@ class ResultTodoSumRVAdater(private val dataList: ArrayList<ResultTodoSum>): Rec
         this.itemClickListener = onItemClickListener
     }
     private lateinit var itemClickListener: onItemClickListener
-
 }

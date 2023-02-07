@@ -15,13 +15,24 @@
     <string name="비밀번호입력">비밀번호</string>
     <string name="비밀번호재확인">비밀번호 확인</string>
     <string name="다음버튼">다음</string>
-    <string name="important">중요</string>
-    <string name="urgent">긴급</string>
-    <string name="checkboard">check board</string>
+    <string name="check_board">체크보드</string>
+    <string name="delete">삭제</string>
+    <string name="add"><u>추가</u></string>
+    <string name="category">카테고리</string>
+    <string name="priority">우선순위</string>
+    <string name="date">날짜</string>
+    <string name="time">시간</string>
+    <string name="memo">메모</string>
 
     <string-array name="spinner_day">
         <item>오늘</item>
         <item>이번주</item>
         <item>이번달</item>
+    </string-array>
+    
+    <string-array name="spinner_category_tv">
+        <item>일반</item>
+        <item>학교</item>
+        <item>집안일</item>
     </string-array>
 </resources>
