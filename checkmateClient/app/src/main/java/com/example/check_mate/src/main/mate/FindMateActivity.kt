@@ -3,6 +3,9 @@ package com.example.check_mate.src.main.mate
 import android.content.ContentValues
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -30,7 +33,15 @@ class FindMateActivity: BaseActivity<ActivityFindMateBinding>(ActivityFindMateBi
         search_view_mate_book = findViewById(R.id.searchview_findmate)
         search_view_mate_book.setOnQueryTextListener(searchViewTextListener)
 
+        val backbtn = findViewById<ImageButton>(R.id.findmate_imgbtn_back) as ImageButton?
         mates = tempMates()
+
+        if (backbtn != null) {
+            backbtn.setOnClickListener(View.OnClickListener {
+                finish()
+            })
+        }
+
 
     }
 
@@ -83,4 +94,6 @@ class FindMateActivity: BaseActivity<ActivityFindMateBinding>(ActivityFindMateBi
 
         return tempMates
     }
+
+
 }

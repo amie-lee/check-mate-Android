@@ -10,11 +10,11 @@
         android:id="@+id/tv_find_mate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="메이트 찾기"
-        android:textSize="16dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/notosans"
         android:layout_marginTop="35dp"
+        android:fontFamily="@font/notosans"
+        android:text="메이트 찾기"
+        android:textColor="@color/white"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,14 +23,13 @@
         android:id="@+id/findmate_imgbtn_back"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:adjustViewBounds="true"
         android:layout_marginStart="18dp"
-        android:layout_marginTop="0dp"
+        android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
+        android:src="@drawable/ic_mate_back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_find_mate"
-        android:src="@drawable/ic_mate_back" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_find_mate" />
 
 
     <LinearLayout
@@ -38,8 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
         android:layout_marginTop="45dp"
+        android:layout_marginEnd="20dp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,10 +49,11 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:gravity="center"
             android:background="@drawable/mate_searchview_background"
-            app:queryHint="메이트의 id를 입력해주세요."
-            android:iconifiedByDefault="false"/>
+            android:gravity="center"
+            android:iconifiedByDefault="false"
+            android:queryHint="메이트의 id를 입력해주세요."
+            android:theme="@style/SearchViewStyle" />
 
 
     </LinearLayout>
@@ -63,27 +63,27 @@
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="30dp"
         android:background="#6D6D6D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/group_mate_search_id"/>
+        app:layout_constraintTop_toBottomOf="@+id/group_mate_search_id" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle_find_mate"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/findmate_item_topLine"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
         tools:listitem="@layout/mate_find_item" />
 
 
-    <TextView
+    <!-- <TextView
         android:id="@+id/findmate_searchfail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -95,6 +95,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recycle_find_mate"
         android:visibility="visible"
-        />
+        />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

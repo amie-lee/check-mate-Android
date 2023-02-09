@@ -20,20 +20,16 @@ class FindMateAdapter(var itemList: ArrayList<FindMateData>)
     var itemFilter = ItemFilter()
 
 
-
     inner class ViewHolder(itemView: View, con: Context) : RecyclerView.ViewHolder(itemView) {
 
         var findmate_tv_name: TextView
         var findmate_tv_id: TextView
-        /*var searchfail: TextView*/
-
 
         init {
             findmate_tv_name = itemView.findViewById(R.id.findmate_tv_name)
             findmate_tv_id = itemView.findViewById(R.id.findmate_tv_id)
-            /*searchfail = findViewById(R.id.findmate_searchfail)*/
 
-            itemView.setOnClickListener {
+            /*itemView.setOnClickListener {
                 AlertDialog.Builder(con).apply {
                     var position = adapterPosition
                     var mate = filterMates[position]
@@ -44,8 +40,9 @@ class FindMateAdapter(var itemList: ArrayList<FindMateData>)
                     })
                     show()
                 }
-            }
+            }*/
         }
+
     }
 
 
@@ -86,17 +83,20 @@ class FindMateAdapter(var itemList: ArrayList<FindMateData>)
         override fun performFiltering(charSequence: CharSequence): FilterResults {
             val filterString = charSequence.toString()
             val results = FilterResults()
+
             Log.d(TAG, "charSequence : $charSequence")
 
             //검색이 필요없을 경우를 위해 원본 배열을 복제
             val filteredList: ArrayList<FindMateData> = ArrayList<FindMateData>()
+
             //공백제외 아무런 값이 없을 경우 -> 원본 배열
             if (filterString.trim { it <= ' ' }.isEmpty()) {
+
                 results.values = itemList
                 results.count = itemList.size
 
-
                 return results
+
 
                 /*//공백제외 2글자 이하인 경우 -> 이름으로만 검색
             } else if (filterString.trim { it <= ' ' }.length <= 2) {
