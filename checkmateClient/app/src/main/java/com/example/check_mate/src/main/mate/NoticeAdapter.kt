@@ -1,7 +1,6 @@
 package com.example.check_mate.src.main.mate
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -50,14 +49,6 @@ class NoticeAdapter(
             onClickDeleteIcon.invoke(listposition)
         }
 
-        /*holder.notice_matename.text = itemList[position].notice_matename
-        holder.notice_text.text = itemList[position].notice_text
-
-        holder.bind*/
     }
-    // (4) 레이아웃 내 View 연결
-    /*class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        val notice_matename: TextView = itemView.findViewById(R.id.notice_item_matename)
-        val notice_text: TextView = itemView.findViewById(R.id.notice_item_text)
-    }*/
+
 }

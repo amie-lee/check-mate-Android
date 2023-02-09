@@ -20,6 +20,7 @@ class  MateFragment : BaseFragment<FragmentMateBinding>(FragmentMateBinding::bin
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         val mateBinding = FragmentMateBinding.inflate(inflater, container,false)
 
         mateBinding.mateBtnNotice.setOnClickListener {
