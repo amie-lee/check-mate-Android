@@ -21,11 +21,12 @@
 
 
         <TextView
+            android:id="@+id/dialog_chess_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/notosans"
-            android:text="폰"
+            android:text="비숍"
             android:textColor="@color/white"
             android:textSize="18dp" />
 
@@ -42,13 +43,13 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/mate_dialog_tv1"
+        android:id="@+id/dialog_chess_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/notosans"
         android:gravity="center"
-        android:text="[ 체크메이트 실행 ]"
+        android:text="[ 메이트 10명 팔로우 ]"
         android:textColor="@color/white_opaque"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,18 +57,18 @@
         app:layout_constraintTop_toBottomOf="@+id/mate_dialog_group_title" />
 
     <TextView
-        android:id="@+id/mate_dialog_tv2"
+        android:id="@+id/dialog_chess_subtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/notosans"
         android:gravity="center"
-        android:text="체크메이트에 오신 것을 환영합니다!"
+        android:text="인기쟁이!"
         android:textColor="@color/white_opaque"
         android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mate_dialog_tv1" />
+        app:layout_constraintTop_toBottomOf="@+id/dialog_chess_title" />
 
 
     <Button
@@ -83,7 +84,7 @@
         android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mate_dialog_tv2" />
+        app:layout_constraintTop_toBottomOf="@+id/dialog_chess_subtitle" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

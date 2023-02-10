@@ -36,12 +36,29 @@ class  MateFragment : BaseFragment<FragmentMateBinding>(FragmentMateBinding::bin
 
 
         mateBinding.mateImgPawn.setOnClickListener{
-            showChessDialog()
+            showDialogPawn()
+        }
+
+        mateBinding.mateImgRook.setOnClickListener{
+            showDialogRook()
         }
 
         mateBinding.mateImgBishop.setOnClickListener{
-            showChessDialog()
+            showDialogBishop()
         }
+
+        mateBinding.mateImgKnight.setOnClickListener{
+            showDialogKnight()
+        }
+
+        mateBinding.mateImgQueen.setOnClickListener{
+            showDialogQueen()
+        }
+
+        mateBinding.mateImgKing.setOnClickListener{
+            showDialogKing()
+        }
+
 
 
         mateBinding.recycleGroupMateAchievement.layoutManager = LinearLayoutManager(requireActivity(), LinearLayoutManager.VERTICAL, false)
@@ -53,9 +70,33 @@ class  MateFragment : BaseFragment<FragmentMateBinding>(FragmentMateBinding::bin
 
         return mateBinding.root
     }
-    private fun showChessDialog() {
-        MateDialog(requireContext()) {
+    private fun showDialogPawn() {
+        MateDialogPawn(requireContext()) {
+        }.show()
+    }
 
+    private fun showDialogRook() {
+        MateDialogRook(requireContext()) {
+        }.show()
+    }
+
+    private fun showDialogBishop() {
+        MateDialogBishop(requireContext()) {
+        }.show()
+    }
+
+    private fun showDialogKnight() {
+        MateDialogKnight(requireContext()) {
+        }.show()
+    }
+
+    private fun showDialogQueen() {
+        MateDialogQueen(requireContext()) {
+        }.show()
+    }
+
+    private fun showDialogKing() {
+        MateDialogKing(requireContext()) {
         }.show()
     }
 }

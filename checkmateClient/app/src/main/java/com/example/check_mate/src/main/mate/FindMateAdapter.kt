@@ -2,14 +2,12 @@ package com.example.check_mate.src.main.mate
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.content.DialogInterface
 import android.graphics.Color
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
-import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
 import com.example.check_mate.R
 
@@ -32,31 +30,6 @@ class FindMateAdapter(var itemList: ArrayList<FindMateData>)
             findmate_tv_id = itemView.findViewById(R.id.findmate_tv_id)
             findmate_btn = itemView.findViewById(R.id.findmate_btn)
 
-            /*itemView.setOnClickListener {
-                AlertDialog.Builder(con).apply {
-                    var position = adapterPosition
-                    var mate = filterMates[position]
-                    setTitle(mate.mate_name)
-                    setMessage(mate.mate_id)
-                    setPositiveButton("OK", DialogInterface.OnClickListener { dialog, which ->
-                        Toast.makeText(con, "메이트가 되었습니다.", Toast.LENGTH_SHORT).show()
-                    })
-                    show()
-                }
-            }*/
-
-            /*findmate_btn.setOnClickListener {
-                AlertDialog.Builder(con).apply {
-                    var position = adapterPosition
-                    var mate = filterMates[position]
-                    setTitle(mate.mate_name)
-                    setMessage(mate.mate_id)
-                    setPositiveButton("OK", DialogInterface.OnClickListener { dialog, which ->
-                        Toast.makeText(con, "메이트가 되었습니다.", Toast.LENGTH_SHORT).show()
-                    })
-                    show()
-                }
-            }*/
 
             val tv_delete = "메이트 삭제"
 
@@ -122,14 +95,6 @@ class FindMateAdapter(var itemList: ArrayList<FindMateData>)
 
                 return results
 
-
-                /*//공백제외 2글자 이하인 경우 -> 이름으로만 검색
-            } else if (filterString.trim { it <= ' ' }.length <= 2) {
-                for (mate in itemList) {
-                    if (mate.mate_id.contains(filterString)) {
-                        filteredList.add(mate)
-                    }
-                }*/
                 //그 외의 경우(공백제외 2글자 초과)
             } else {
                 for (mate in itemList) {
