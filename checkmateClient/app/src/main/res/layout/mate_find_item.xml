@@ -41,9 +41,11 @@
             android:textSize="10dp"
             android:layout_marginStart="100dp"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/findmate_btn"
             android:layout_width="80dp"
-            android:layout_height="32dp"
+            android:layout_height="25dp"
+            android:background="@drawable/mate_btn_add"
             android:text="메이트 추가"
             android:textSize="10dp"
             android:fontFamily="@font/notosans"

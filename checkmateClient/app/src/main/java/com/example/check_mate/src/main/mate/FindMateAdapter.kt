@@ -3,6 +3,7 @@ package com.example.check_mate.src.main.mate
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.DialogInterface
+import android.graphics.Color
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -24,10 +25,12 @@ class FindMateAdapter(var itemList: ArrayList<FindMateData>)
 
         var findmate_tv_name: TextView
         var findmate_tv_id: TextView
+        var findmate_btn: Button
 
         init {
             findmate_tv_name = itemView.findViewById(R.id.findmate_tv_name)
             findmate_tv_id = itemView.findViewById(R.id.findmate_tv_id)
+            findmate_btn = itemView.findViewById(R.id.findmate_btn)
 
             /*itemView.setOnClickListener {
                 AlertDialog.Builder(con).apply {
@@ -36,11 +39,33 @@ class FindMateAdapter(var itemList: ArrayList<FindMateData>)
                     setTitle(mate.mate_name)
                     setMessage(mate.mate_id)
                     setPositiveButton("OK", DialogInterface.OnClickListener { dialog, which ->
-                        Toast.makeText(con, "OK Button Click", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(con, "메이트가 되었습니다.", Toast.LENGTH_SHORT).show()
                     })
                     show()
                 }
             }*/
+
+            /*findmate_btn.setOnClickListener {
+                AlertDialog.Builder(con).apply {
+                    var position = adapterPosition
+                    var mate = filterMates[position]
+                    setTitle(mate.mate_name)
+                    setMessage(mate.mate_id)
+                    setPositiveButton("OK", DialogInterface.OnClickListener { dialog, which ->
+                        Toast.makeText(con, "메이트가 되었습니다.", Toast.LENGTH_SHORT).show()
+                    })
+                    show()
+                }
+            }*/
+
+            val tv_delete = "메이트 삭제"
+
+            findmate_btn.setOnClickListener {
+                Toast.makeText(con, "메이트가 되었습니다.", Toast.LENGTH_SHORT).show()
+                findmate_btn.setText(tv_delete)
+                findmate_btn.setTextColor(Color.BLACK)
+                findmate_btn.setBackgroundResource(R.drawable.mate_btn_delete)
+            }
         }
 
     }

@@ -25,6 +25,11 @@ class FindMateActivity: BaseActivity<ActivityFindMateBinding>(ActivityFindMateBi
 
     lateinit var search_view_mate_book: SearchView
 
+
+
+
+    lateinit var chess: ImageButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_find_mate)

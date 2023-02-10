@@ -283,6 +283,7 @@
                 android:layout_marginStart="27dp"
                 android:layout_gravity="bottom"
                 android:adjustViewBounds="true"
+
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"/>
 
