@@ -25,7 +25,8 @@
         android:layout_height="wrap_content"
         android:text="todo"
         android:textSize="15sp"
-        android:textStyle="bold"
+        android:fontFamily="@font/notosans_bold"
+        android:includeFontPadding="false"
         android:ellipsize="end"
         android:maxLines="1"
         android:textColor="@color/white"
@@ -42,6 +43,8 @@
         android:text="date"
         android:textSize="13sp"
         android:textColor="@color/white"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/notosans_regular"
         android:paddingBottom="2dp"
         app:layout_constraintTop_toBottomOf="@id/tv_todo"
         app:layout_constraintStart_toStartOf="@id/tv_todo"
@@ -53,6 +56,8 @@
         android:layout_height="wrap_content"
         android:text="11시까지"
         android:layout_marginStart="6dp"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/notosans_regular"
         android:textSize="13sp"
         android:textColor="@color/white"
         android:paddingBottom="2dp"
@@ -67,7 +72,9 @@
         app:layout_constraintWidth_percent="0.886"
         android:text="memo"
         android:textSize="13sp"
+        android:includeFontPadding="false"
         android:ellipsize="end"
+        android:fontFamily="@font/notosans_regular"
         android:maxLines="1"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -81,19 +88,17 @@
         android:layout_marginStart="10dp">
 
         <ImageView
-            android:id="@+id/tv_important"
+            android:id="@+id/tv_tag_important"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_btn_important"
             android:layout_marginEnd="3dp"
-            app:layout_constraintEnd_toStartOf="@id/tv_urgent"
-            app:layout_constraintTop_toTopOf="@id/tv_urgent"/>
+            app:layout_constraintEnd_toStartOf="@id/tv_tag_urgent"
+            app:layout_constraintTop_toTopOf="@id/tv_tag_urgent"/>
 
         <ImageView
-            android:id="@+id/tv_urgent"
+            android:id="@+id/tv_tag_urgent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_btn_urgent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 

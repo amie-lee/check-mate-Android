@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:textSize="13dp"
     android:textColor="@color/black"
+    android:fontFamily="@font/notosans_semibold"
     android:textStyle="bold"
     android:gravity="end"
     android:paddingEnd="7dp">
