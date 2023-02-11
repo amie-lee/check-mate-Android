@@ -1,9 +1,13 @@
 package com.example.check_mate.src.main
 
+import android.text.Editable
+import android.text.TextWatcher
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.check_mate.databinding.ItemDownTodoBinding
 import com.example.check_mate.src.main.models.ResultDownTodo
 
@@ -13,6 +17,26 @@ class ResultDownTodoRVAdapter(private val dataList: ArrayList<ResultDownTodo>): 
             viewBinding.etTodo.text = data.todo
             viewBinding.cbTodo.isChecked = data.check
         }
+
+        fun edit(position: Int){
+            viewBinding.etTodo.addTextChangedListener(TodoTextWatcher(position))
+        }
+
+    }
+
+    inner class TodoTextWatcher(var position: Int) : TextWatcher {
+        override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+        }
+
+        override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+            if (s != null) {
+                dataList[position].todo = s.toEditable()
+            }
+        }
+
+        override fun afterTextChanged(s: Editable?) {
+        }
+
     }
 
 
@@ -23,8 +47,10 @@ class ResultDownTodoRVAdapter(private val dataList: ArrayList<ResultDownTodo>): 
 
     override fun onBindViewHolder(holder: ResultDownTodoViewHolder, position: Int) {
         holder.bind(dataList[position])
+        holder.edit(position)
         holder.itemView.setOnClickListener {
-
+            itemClickListener.onClick(it, position)
+            notifyDataSetChanged()
         }
     }
 
@@ -38,4 +64,12 @@ class ResultDownTodoRVAdapter(private val dataList: ArrayList<ResultDownTodo>): 
     }
     private lateinit var itemClickListener: onItemClickListener
 
+    interface ItemTouchHelperListener {
+        fun onItemMove(fromPosition: Int, toPosition: Int) : Boolean
+        fun onItemSwipe(position: Int)
+        fun onLeftClick(position: Int, viewHolder: ViewHolder?)
+        fun onRightClick(position: Int, viewHolder: ViewHolder?)
+    }
+
+    fun CharSequence.toEditable(): Editable =  Editable.Factory.getInstance().newEditable(this)
 }

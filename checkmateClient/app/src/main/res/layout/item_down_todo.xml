@@ -3,26 +3,33 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@android:color/transparent">
-
-    <EditText
-        android:id="@+id/et_todo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="하위 투두를 입력해보세요"
-        android:textSize="15dp"
-        android:textColor="@color/white"
-        android:background="@android:color/transparent"
-        app:layout_constraintTop_toTopOf="@id/cb_todo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/cb_todo"/>
+    android:background="@android:color/transparent"
+    android:layout_marginBottom="10dp">
 
     <CheckBox
         android:id="@+id/cb_todo"
-        android:layout_width="wrap_content"
+        android:layout_width="25dp"
         android:layout_height="25dp"
-
+        android:button="@android:color/transparent"
+        android:background="@drawable/check_selector"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/et_todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="하위 투두를 입력해보세요"
+        android:textColorHint="@color/white_opaque"
+        android:textSize="15dp"
+        android:fontFamily="@font/notosans_regular"
+        android:textColor="@color/white"
+        android:lines="1"
+        android:includeFontPadding="false"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/cb_todo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/cb_todo"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
