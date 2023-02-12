@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Checkmate" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Checkmate" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#2C2C2C</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -17,5 +17,11 @@
     <style name="FloatingBtn" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorOnSecondary">@color/white</item>
     </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">#535353</item>
+    </style>
+
 
 </resources>
