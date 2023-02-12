@@ -94,7 +94,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/notosans"
-                    android:text="닉네임"
+                    android:text="로빈"
                     android:textColor="#FFC9C9"
                     android:textSize="12dp" />
 
@@ -202,7 +202,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/notosans"
-                android:text="닉네임"
+                android:text="로빈"
                 android:textColor="#FFC9C9"
                 android:textSize="12dp" />
 

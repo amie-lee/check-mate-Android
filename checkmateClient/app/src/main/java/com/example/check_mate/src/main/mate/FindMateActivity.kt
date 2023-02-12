@@ -89,13 +89,14 @@ class FindMateActivity: BaseActivity<ActivityFindMateBinding>(ActivityFindMateBi
 
     fun tempMates(): ArrayList<FindMateData> {
         var tempMates = ArrayList<FindMateData>()
-        tempMates.add(FindMateData("메이트11", "@apple"))
-        tempMates.add(FindMateData("메이트22", "@orange"))
-        tempMates.add(FindMateData("메이트33", "@qwertyuio12345"))
-        tempMates.add(FindMateData("메이트44", "@grape"))
-        tempMates.add(FindMateData("메이트55", "@yellow"))
-        tempMates.add(FindMateData("메이트66", "@happy"))
-        tempMates.add(FindMateData("메이트77", "@sky"))
+        tempMates.add(FindMateData("메리", "@merryyy"))
+        tempMates.add(FindMateData("윤", "@yyyoon"))
+        tempMates.add(FindMateData("타로", "@tarrro"))
+        tempMates.add(FindMateData("만자", "@manjjja"))
+        tempMates.add(FindMateData("마카", "@maccca"))
+        tempMates.add(FindMateData("블루", "@bbblue"))
+        tempMates.add(FindMateData("오리", "@oriii"))
+        tempMates.add(FindMateData("우사", "@uuusa"))
 
         return tempMates
     }

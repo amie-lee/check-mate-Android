@@ -31,9 +31,9 @@ class NoticeActivity: BaseActivity<ActivityNoticeBinding>(ActivityNoticeBinding:
             finish()
         }
 
-        data.add(NoticeData("메이트22", "님과 메이트가 되었습니다."))
-        data.add(NoticeData("메이트11", "님이 수집품 룩을 잠금 해제했습니다."))
-        data.add(NoticeData("메이트11", "님과 메이트가 되었습니다."))
+        data.add(NoticeData("우사", "님과 메이트가 되었습니다."))
+        data.add(NoticeData("메리", "님이 수집품 룩을 잠금 해제했습니다."))
+        data.add(NoticeData("메리", "님과 메이트가 되었습니다."))
     }
 
 

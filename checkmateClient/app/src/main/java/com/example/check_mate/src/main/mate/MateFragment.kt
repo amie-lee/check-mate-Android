@@ -1,6 +1,7 @@
 package com.example.check_mate.src.main.mate
 
 import android.content.Intent
+import android.graphics.Bitmap
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.check_mate.R
 import com.example.check_mate.config.BaseFragment
 import com.example.check_mate.databinding.FragmentMateBinding
+import kotlinx.android.synthetic.main.fragment_mate.*
 
 
 class  MateFragment : BaseFragment<FragmentMateBinding>(FragmentMateBinding::bind, R.layout.fragment_mate) {
@@ -65,8 +67,8 @@ class  MateFragment : BaseFragment<FragmentMateBinding>(FragmentMateBinding::bin
         mateBinding.recycleGroupMateAchievement.adapter = MateAdapter
 
 
-        mateData.add(MateData("메이트11", "70",70))
-        mateData.add(MateData("메이트22", "45",45))
+        mateData.add(MateData("메리", "70",70))
+        mateData.add(MateData("우사", "45",45))
 
         return mateBinding.root
     }
