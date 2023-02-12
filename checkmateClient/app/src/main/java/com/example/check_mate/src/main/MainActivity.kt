@@ -18,6 +18,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
             .replace(binding.mainFrm.id, CheckboardFragment())
             .commitAllowingStateLoss()
 
+        binding.navBottom.itemIconTintList = null
+
         binding.navBottom.run {
             setOnItemSelectedListener {
                 when(it.itemId){
