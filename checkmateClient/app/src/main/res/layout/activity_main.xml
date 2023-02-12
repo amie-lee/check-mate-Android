@@ -23,7 +23,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/menu_bottom_nav"
+        app:itemIconSize="38dp"
         android:background="@color/main_black"
-        app:itemTextColor="@color/white"
-        app:labelVisibilityMode="labeled"/>
+        app:labelVisibilityMode="unlabeled"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toTopOf="@id/nav_bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#666666"
+        android:layout_marginHorizontal="13dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

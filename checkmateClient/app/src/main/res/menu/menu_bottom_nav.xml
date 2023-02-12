@@ -3,14 +3,18 @@
 
     <item
         android:id="@+id/menu_check_board"
-        android:title="check"/>
+        android:icon="@drawable/check_board_selector"
+        android:title="@string/check_board" />
     <item
         android:id="@+id/menu_todo"
+        android:icon="@drawable/todo_selector"
         android:title="todo"/>
     <item
         android:id="@+id/menu_mate"
+        android:icon="@drawable/mate_selector"
         android:title="mate"/>
     <item
         android:id="@+id/menu_setting"
+        android:icon="@drawable/setting_selector"
         android:title="setting"/>
 </menu>
