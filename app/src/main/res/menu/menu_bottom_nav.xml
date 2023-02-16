@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_check_board"
+        android:title="check"/>
+    <item
+        android:id="@+id/menu_todo"
+        android:title="todo"/>
+    <item
+        android:id="@+id/menu_mate"
+        android:title="mate"/>
+    <item
+        android:id="@+id/menu_setting"
+        android:title="setting"/>
+</menu>

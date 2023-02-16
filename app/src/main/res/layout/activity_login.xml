@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".src.login.LoginActivity"
+    android:background="#2C2C2C">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/checkmateLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/frame" />
+
+        <TextView
+            android:id="@+id/checkmateName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+
+            <EditText
+                android:id="@+id/loginID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#80FFFFFF"
+                android:ems="10"
+                android:hint="@string/Id"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/transparent"
+                android:textColorHint="@color/white"
+
+                />
+
+
+            <EditText
+                android:id="@+id/loginPW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                app:layout_constraintTop_toBottomOf="@+id/loginEmail"
+                android:inputType="textPassword"
+                app:passwordToggleEnabled="true"
+                android:hint="비밀번호"
+                android:textColorHint="@color/white"
+                android:background="@android:color/transparent"
+                android:backgroundTint="#d9d9d9"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+
+                />
+
+        <TextView
+            android:id="@+id/errorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="right"
+            android:textColor="#FFFF5959"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+
+            <!--로그인 버튼 svg 파일이 알 수 없는 이유로 로드 되지 않아 일단 png로 대체하였음    -->
+            <ImageButton
+                android:id="@+id/naverLogin"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/naver_login_png"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/kakaoLogin"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/kakao_login_png"
+                android:scaleType="fitCenter"/> />
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/textLoginother"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#d9d9d9"
+                android:layout_gravity="center"
+                android:text="네이버 또는 카카오 아이디로 로그인하기" />
+
+        </LinearLayout>
+
+
+        <android.widget.Button
+            android:id="@+id/loginBTN"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#d9d9d9"
+            android:text="로그인"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/losePW"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:text="@string/losingPW"
+            android:textColor="#d9d9d9"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
