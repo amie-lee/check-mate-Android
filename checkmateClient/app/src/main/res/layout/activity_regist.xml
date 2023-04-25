@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2C2C"
+    tools:context=".src.signup.RegistActivity">
+
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3dp"
+        android:text="@string/회원가입"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042"
+        />
+
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="141dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginEnd="42dp"
+        android:text="@string/email_error"
+        android:textColor="#2C2C2C"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_edit"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/PW_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="41dp"
+        android:text="@string/pw_condition"
+        android:textColor="#2C2C2C"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PW_edit"
+        tools:ignore="SmallSp"/>
+
+    <TextView
+        android:id="@+id/PW_check_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="251dp"
+        android:layout_marginEnd="41dp"
+        android:text="@string/pw_confirm"
+        android:textColor="#2C2C2C"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PW_check_edit"
+        tools:ignore="SmallSp"/>
+
+
+    <EditText
+        android:id="@+id/email_edit"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/white"
+        android:importantForAutofill="no"
+        android:text="@string/이메일입력"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/PW_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck,TextSizeCheck" />
+
+
+    <EditText
+        android:id="@+id/PW_edit"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="57dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/비밀번호입력"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/PW_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_text"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/PW_check_edit"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="@color/white"
+        android:importantForAutofill="no"
+        android:text="@string/비밀번호재확인"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/PW_check_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/PW_text"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck,TextSizeCheck" />
+
+    <android.widget.Button
+        android:id="@+id/btn_register1"
+        android:layout_width="294dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:backgroundTint="#FFD9D9D9"
+        android:text="@string/다음버튼"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

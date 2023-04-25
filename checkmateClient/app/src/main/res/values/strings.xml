@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">check-mate!</string>
+    <string name="losingPW"><u>비밀번호를 잊어버리셨나요?</u></string>
+    <string name="pw_title">비밀번호 변경</string>
+    <string name="pw_condition">* 알파벳, 숫자를 포함한 8글자 이상의 비밀번호를 입력해주세요.</string>
+    <string name="pw_confirm">* 비밀번호가 일치하지 않습니다.</string>
+    <string name="email_empty">* 이메일을 입력해주세요.</string>
+    <string name="email_error">* 유효하지 않은 이메일 주소입니다.</string>
+    <string name="프로필_생성">프로필 생성</string>
+    <string name="ID">ID</string>
+    <string name="닉네임">닉네임</string>
+    <string name="완료">완료</string>
+    <string name="회원가입">회원가입</string>
+    <string name="이메일입력">이메일 주소</string>
+    <string name="비밀번호입력">비밀번호</string>
+    <string name="비밀번호재확인">비밀번호 확인</string>
+    <string name="다음버튼">다음</string>
+    <string name="check_board">체크보드</string>
+    <string name="delete">삭제</string>
+    <string name="add"><u>추가</u></string>
+    <string name="category">카테고리</string>
+    <string name="priority">우선순위</string>
+    <string name="date">날짜</string>
+    <string name="time">시간</string>
+    <string name="memo">메모</string>
+
+    <string-array name="spinner_day">
+        <item>오늘</item>
+        <item>이번주</item>
+        <item>이번달</item>
+    </string-array>
+    
+    <string-array name="spinner_category_tv">
+        <item>일반</item>
+        <item>학교</item>
+        <item>집안일</item>
+    </string-array>
+</resources>
